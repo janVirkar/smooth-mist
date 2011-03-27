@@ -29,3 +29,7 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :development do
+  gem 'annotate-models', '1.0.4'
+end
