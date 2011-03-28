@@ -1,0 +1,70 @@
+section.round {
+  background: #345A8B;
+}
+
+#nav-section {
+  overflow: hidden;
+  height: 700px;
+  width: 920px;
+}
+
+div.col, div.row {
+  background: #fff;
+  padding: 1em;
+  position: absolute;
+  
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+div.col {
+  height: 217px;
+  width: 275px;
+}
+
+div.bot {
+  top: 455px;
+}
+
+div.row {
+  height: 172px;
+  width: 275px;
+}
+
+div.center, div.top, div.bot {
+}
+
+div.left {
+  
+}
+
+div.center {
+  left: 308px;
+}
+
+div.right {
+  left: 616px;
+}
+
+#nav-column {
+  overflow: hidden;
+  position: absolute;
+  left: 439px;
+  width: 303px;
+  height: 700px;
+}
+
+#nav-row {
+  overflow: hidden;
+  position: absolute;
+  top: 353px;
+  width: 920px;
+  height: 200px;
+}
+
+#nav-cat {
+  float: right;
+  background: #fff;
+  padding: 0.5em;
+}

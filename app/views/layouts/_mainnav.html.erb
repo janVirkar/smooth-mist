@@ -1,0 +1,39 @@
+<%= javascript_include_tag 'mainnav/jquery'%>
+<%= javascript_include_tag 'mainnav/nav'%>
+<%= javascript_include_tag 'mainnav/side'%>
+<%= stylesheet_link_tag 'mainnav/nav',  :media => 'screen' %>
+<%= stylesheet_link_tag 'mainnav/side',  :media => 'screen' %>
+<script type="text/javascript">
+$(document).ready(function() {
+	nav.init();
+	conv.init();
+	
+	$("html").keydown(function(event) {
+		moveNav(event);
+	});
+	
+	$(nav.colTop).click(function(event) {
+		conv.load(0);
+	});
+	
+	$(nav.colBot).click(function(event) {
+		conv.load(1);
+	});
+	
+	$("#arrow-left").click(function(event) {
+		nav.move(0);
+	});
+	
+	$("#arrow-right").click(function(event) {
+		nav.move(1);
+	});
+	
+	$("#arrow-up").click(function(event) {
+		nav.move(2);
+	});
+	
+	$("#arrow-down").click(function(event) {
+		nav.move(3);
+	});
+});
+</script>
