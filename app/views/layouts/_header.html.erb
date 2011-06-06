@@ -3,9 +3,18 @@
   <%= link_to logo, root_path %>
   <nav class="round">
     <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Help", help_path %></li>
-      <li><%= link_to "Sign in", '#' %></li>
+      <li><%= link_to "Home", root_path, :class => 'outside' %></li>
+	  <% if signed_in? %>
+	  <li><%= link_to "Users", users_path, :class => 'outside' %></li>
+	  <li><%= link_to "Profile", current_user, :class => 'outside' %></li>
+	  <li><%= link_to "Settings", edit_user_path(current_user), :class => 'outside' %></li>
+	  <% end %>
+      <li><%= link_to "Help", help_path, :class => 'outside' %></li>
+	  <% if signed_in? %>
+	  <li><%= link_to "Sign out", signout_path, :method => :delete, :class => 'outside' %></li>
+	  <% else %>
+      <li><%= link_to "Sign in", signin_path, :class => 'outside' %></li>
+	  <% end %>
     </ul>
   </nav>
 </header>

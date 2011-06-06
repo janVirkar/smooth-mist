@@ -41,16 +41,32 @@ section h1 {
 /* Links */
 
 a {
-  color: #fff;
+  color: #069;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fff;
-  text-decoration: underline;
+  color: #069;
+  /* text-decoration: underline; */
+  text-decoration: none;
 }
 
 a:visited {
+  color: #069;
+}
+
+a.outside {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.outside:hover {
+  color: #fff;
+  /* text-decoration: underline; */
+  text-decoration: none;
+}
+
+a.outside:visited {
   color: #fff;
 }
 
@@ -186,3 +202,10 @@ div.field, div.actions {
   list-style: square;
 }
 
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}

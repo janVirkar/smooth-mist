@@ -49,8 +49,9 @@ div.right {
 
 #nav-column {
   overflow: hidden;
-  position: absolute;
-  left: 439px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   width: 303px;
   height: 700px;
 }
