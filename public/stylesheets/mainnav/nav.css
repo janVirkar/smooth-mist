@@ -58,8 +58,8 @@ div.right {
 
 #nav-row {
   overflow: hidden;
-  position: absolute;
-  top: 353px;
+  position: relative;
+  top: -450px;
   width: 920px;
   height: 200px;
 }
